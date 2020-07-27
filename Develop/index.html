@@ -113,14 +113,17 @@
       var hourEight = document.querySelector('#hour-8'); 
       var hourNine = document.querySelector('#hour-9'); 
  
-      var getText = localStorage.getItem("getText"); 
 
-
-    hourOne.addEventListener("click", function(){
-    getText; 
-    localStorage.setItem ('gettext', getText);
-    console.log($("#hourOne")); 
-    });
+    // Created function click event holding the value and storing the value to local storage 
+      $(".saveBtn").click(function(event){
+        event.preventDefault(); 
+        console.log("I was clicked!"); 
+        var value = $(this).siblings("textarea").val(); 
+        console.log("value", value); 
+        var time = $(this).parent().attr("id"); 
+        console.log("time: ", time); 
+        localStorage.setItem(time, value); 
+      }); 
           
       </script>
   </body>
