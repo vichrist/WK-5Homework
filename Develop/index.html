@@ -124,6 +124,13 @@
         console.log("time: ", time); 
         localStorage.setItem(time, value); 
       }); 
+
+      function getSavedValue (v) {
+        if (!localStorage.getItem(v)) {
+          return ""; 
+        }
+        return localStorage.getItem(v); 
+      }
           
       </script>
   </body>
