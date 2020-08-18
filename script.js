@@ -1,3 +1,5 @@
+var dateToday = date();
+
 // Created a const varaible and assigned the moment function to pull in current date 
 const todaysDate = moment(); 
 console.log(" Date: "+ todaysDate.format('MM-DD-YYYY'));
@@ -30,13 +32,26 @@ $(".saveBtn").click(function(event){
   localStorage.setItem(time, value);   
 }); 
 
-v=""; 
+$
 
-function getSavedValue (v) {
-  if (localStorage.getItem(v)) {
-    return localStorage.getItem(v); 
-    console.log(localStorage.getItem("hour-1")); 
-  }
-} 
-getSavedValue(v); 
+// $('#hour-1).on("keyup", function() {
+//   hour-1 = $(this).val();
+//   var hourResponse = hour-1 
+//   $('#hour-1').text(hourResponse); 
+//   console.log(); 
+// });
+
+
+
+
+
+// v=""; 
+
+// function getSavedValue (v) {
+//   if (localStorage.getItem(v)) {
+//     return localStorage.getItem(v); 
+//     console.log(localStorage.getItem("hour-1")); 
+//   }
+// } 
+// getSavedValue(v); 
 
